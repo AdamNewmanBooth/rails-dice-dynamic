@@ -10,4 +10,6 @@ Rails.application.routes.draw do
 
   get("/dice/5/4", {:controller =>"zebra", :action =>"five_four"})
 
+  get("/dice/:number1/:number2" , {:controller =>"zebra", :action =>"random"})
+
 end
