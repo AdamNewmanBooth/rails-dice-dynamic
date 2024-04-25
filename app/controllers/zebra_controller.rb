@@ -48,7 +48,9 @@ class ZebraController < ApplicationController
     number1 = params[:number1].to_i  # Number of dice to roll
     number2 = params[:number2].to_i  # Number of sides on each die
    
-    
+    @number1 = number1
+    @number2 = number2
+
     @rolls = []
 
     number1.times do
